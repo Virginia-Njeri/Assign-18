@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.appcompat.view.menu.MenuView
 import androidx.recyclerview.widget.RecyclerView
 import com.naburi.mycontacts.databinding.ContactListItemBinding
+import com.squareup.picasso.Picasso
 
 class ContactRVAdapter(var contactList:List<Contact>):
     RecyclerView.Adapter<ContactViewHolder>() {
@@ -22,6 +23,12 @@ class ContactRVAdapter(var contactList:List<Contact>):
         holder.binding.tvPhone.text = currentContact.phoneNumber
         holder.binding.tvEmail.text = currentContact.email
         holder.binding.tvAddress.text = currentContact.address
+        Picasso.get()
+            .load(currentContact.image)
+            .resize(300,300)
+            .centerCrop()
+            .placeholder(R.drawable.ic_baseline_person_24)
+            .into(holder.binding.ivContact)
     }
     override fun getItemCount(): Int {
         return contactList.size
