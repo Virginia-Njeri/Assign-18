@@ -6,4 +6,137 @@
     android:layout_height="match_parent"
     tools:context=".ViewContactActivity">
 
+    <ImageView
+        android:id="@+id/imgPerson"
+        android:layout_width="161dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <TextView
+        android:id="@+id/tvNam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:text="Virginia Njeri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPerson" />
+
+    <ImageView
+        android:id="@+id/imgPhone"
+        android:layout_width="40dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNam"
+        app:srcCompat="@drawable/ic_baseline_local_phone_24" />
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="172dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="32dp"
+        android:text="Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvCall" />
+
+    <ImageView
+        android:id="@+id/imgEmail"
+        android:layout_width="47dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvEmail2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvEmail2"
+        app:srcCompat="@drawable/ic_baseline_email_24" />
+
+    <TextView
+        android:id="@+id/tvEmail2"
+        android:layout_width="167dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="32dp"
+        android:text="Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumber" />
+
+    <ImageView
+        android:id="@+id/imgAdress"
+        android:layout_width="40dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAdress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvAdress"
+        app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+    <TextView
+        android:id="@+id/tvAdress"
+        android:layout_width="168dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+        android:text="Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.399"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail2" />
+
+    <ImageView
+        android:id="@+id/imgText"
+        android:layout_width="42dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toEndOf="@+id/imgPhone"
+        app:layout_constraintTop_toBottomOf="@+id/tvNam"
+        app:srcCompat="@drawable/ic_baseline_textsms_24" />
+
+    <TextView
+        android:id="@+id/imgMessage"
+        android:layout_width="46dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="112dp"
+        android:text="Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvCall"
+        app:layout_constraintTop_toBottomOf="@+id/imgText" />
+
+    <TextView
+        android:id="@+id/tvCall"
+        android:layout_width="36dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="6dp"
+        android:text="call"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPhone" />
+
+    <ImageView
+        android:id="@+id/imgnum"
+        android:layout_width="39dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvNumber"
+        app:srcCompat="@drawable/ic_baseline_local_phone_24" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
